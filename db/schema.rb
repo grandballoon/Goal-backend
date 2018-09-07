@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_07_135738) do
+ActiveRecord::Schema.define(version: 2018_09_07_175703) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_09_07_135738) do
     t.datetime "due_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "completed", default: false
     t.index ["task_id"], name: "index_sub_tasks_on_task_id"
   end
 
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(version: 2018_09_07_135738) do
     t.datetime "due_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "completed", default: false
     t.index ["user_id"], name: "index_tasks_on_user_id"
   end
 
@@ -38,6 +40,8 @@ ActiveRecord::Schema.define(version: 2018_09_07_135738) do
     t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "phone_number"
+    t.string "email"
   end
 
   add_foreign_key "sub_tasks", "tasks"
