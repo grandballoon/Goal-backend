@@ -7,7 +7,7 @@ class Api::V1::SubTasksController < ApplicationController
  end
 
  def update
-   @sub_task.update(note_params)
+   @sub_task.update(sub_task_params)
    if @sub_task.save
      render json: @sub_task, status: :accepted
    else
@@ -29,7 +29,7 @@ class Api::V1::SubTasksController < ApplicationController
  private
 
  def sub_task_params
-   params.permit(:description, :task_id, :due_date)
+   params.permit(:description, :task_id, :due_date, :completed)
  end
 
  def find_sub_task
