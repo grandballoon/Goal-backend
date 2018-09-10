@@ -15,6 +15,10 @@ class Api::V1::SubTasksController < ApplicationController
    end
  end
 
+ def show
+   render json: @sub_task
+ end
+
  def create
     @sub_task = SubTask.new(sub_task_params)
     if @sub_task.save
