@@ -19,6 +19,13 @@ class Api::V1::TasksController < ApplicationController
    end
  end
 
+ def create
+    @task = Task.new(task_params)
+    if @task.save
+      render json: @task
+    end
+  end
+
  def destroy
    @task.destroy
  end
