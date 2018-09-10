@@ -33,7 +33,7 @@ class Api::V1::TasksController < ApplicationController
  private
 
  def task_params
-   params.permit(:title, :description, :user_id, :due_date)
+   params.permit(:title, :description, :user_id, :due_date, :completed)
  end
 
  def find_task
