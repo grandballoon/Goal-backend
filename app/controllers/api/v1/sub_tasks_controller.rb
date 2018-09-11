@@ -33,7 +33,7 @@ class Api::V1::SubTasksController < ApplicationController
  private
 
  def sub_task_params
-   params.permit(:description, :task_id, :due_date, :completed)
+   params.permit(:description, :task_id, :due_date, :completed, :order)
  end
 
  def find_sub_task
