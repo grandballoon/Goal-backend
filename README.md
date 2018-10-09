@@ -1,25 +1,11 @@
-# README
+## Goal
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Goal is a project by myself and Luke Conley (https://github.com/grandballoon) while attending Flatiron School's full stack web development bootcamp.
 
-Things you may want to cover:
+An exercise in creating an app in React, Goal was designed as a task list manager in which users can create goals, break them down into sub-goals, all of which have a due date, and mark them as complete when they are finished.
 
-* Ruby version
+We also added a drag and drop functionality, in which the user can re-sort a goal's sub-goals, and the order of those goals will persist.
 
-* System dependencies
+Here is a link to the back end repository: https://github.com/jaredianmills/Goal-backend
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# Goal-backend
+Video demo: https://www.youtube.com/watch?v=wAt3nKOUGFM
